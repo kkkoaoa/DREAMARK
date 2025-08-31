@@ -1,0 +1,19 @@
+sdf:
+  name: FCBlock
+  in_channel: 3
+  hidden_channel: 512
+  out_channel: 1
+  n_blocks: 2
+
+scheduler:
+  name: StepLR
+  step_size: 200
+  gamma: 0.5
+
+output_dir: .output/
+lr: 0.001
+iteration: 1000
+points_batch_size: 65536
+msg_length: 16
+linspace_steps: 32
+strength: 0.001

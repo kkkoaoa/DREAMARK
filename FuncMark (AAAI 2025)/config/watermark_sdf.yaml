@@ -1,0 +1,31 @@
+# sdf_checkpoint: dataset/sdf/8d62d327fb15c9b42ff26728ed9d7bc3.sdf
+# wm_checkpoint: dataset/wm-32/8d62d327fb15c9b42ff26728ed9d7bc3.wm.sdf
+
+sdf_checkpoint: dataset/sdf/Armadillo.sdf
+wm_checkpoint: dataset/wm-32/Armadillo.wm.sdf
+
+# sdf_checkpoint: .output/batch_experiment-16.yaml/ec79d41034e8deabf4fb4dee5181bee.sdf
+# wm_checkpoint: .output/batch_experiment-16.yaml/ec79d41034e8deabf4fb4dee5181bee.wm.sdf
+
+# sdf_checkpoint: dataset/sdf/fb68077d405c233ef879f4163a3ec7b.sdf
+# wm_checkpoint: dataset/wm-32/fb68077d405c233ef879f4163a3ec7b.wm.sdf
+
+sdf:
+  name: FCBlock
+  in_channel: 3
+  hidden_channel: 512
+  out_channel: 1
+  n_blocks: 2
+
+scheduler:
+  name: StepLR
+  step_size: 200
+  gamma: 0.5
+
+output_dir: .output/
+lr: 0.001
+iteration: 1000
+points_batch_size: 65536
+msg_length: 32
+linspace_steps: 32
+strength: 0.001

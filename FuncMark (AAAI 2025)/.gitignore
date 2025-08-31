@@ -1,0 +1,12 @@
+.output
+.vscode
+.idea
+__pycache__
+*.egg-info
+cmake*
+build
+libtorch
+
+dataset
+*.txt
+*.png

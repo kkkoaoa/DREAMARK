@@ -1,0 +1,31 @@
+# model_path: dataset/data/322e8dccadea03d3340b9c9d10273ac.npy
+# sdf_checkpoint: dataset/sdf/322e8dccadea03d3340b9c9d10273ac.sdf
+# sdf_checkpoint: dataset/wm-32/322e8dccadea03d3340b9c9d10273ac.wm.sdf
+
+# model_path: dataset/data/1930a979c7a9a2d662b600da24e0965.npy
+# sdf_checkpoint: dataset/sdf/1930a979c7a9a2d662b600da24e0965.sdf
+
+# model_path: dataset/data/4d1d28d15b19f9101e0e41d96d3d0a78.npy
+# sdf_checkpoint: .output/batch_experiment-16.yaml/4d1d28d15b19f9101e0e41d96d3d0a78.sdf
+
+model_path: dataset/data/Armadillo.npy
+sdf_checkpoint: dataset/sdf/Armadillo.sdf
+# sdf_checkpoint: dataset/wm-32/bunny.wm.sdf
+# sdf_checkpoint: dataset/sdf/dragon_vrip.sdf
+
+sdf:
+  name: FCBlock
+  in_channel: 3
+  hidden_channel: 512
+  out_channel: 1
+  n_blocks: 2
+
+scheduler:
+  name: StepLR
+  step_size: 200
+  gamma: 0.5
+
+output_dir: .output/
+lr: 0.001
+iteration: 1000
+points_batch_size: 65536
