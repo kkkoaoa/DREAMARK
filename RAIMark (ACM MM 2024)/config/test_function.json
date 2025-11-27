@@ -1,8 +1,0 @@
-{
-    "samples": [[256, 256]],
-    "decoder_max_msg": 30,
-    "msg_length": 30,
-    "decoder_name": "D",
-    "noise_layers": ["Identity()"],
-    "device": 0
-}
